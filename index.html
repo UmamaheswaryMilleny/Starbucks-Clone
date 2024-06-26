@@ -10,20 +10,90 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            font-family: SoDoSans_Semibold, Helvetica, sans-serif,thin;
         }
+        /* header start */
         header{
             max-width: 100vw;
             height: 72px;
-            /* background-color: aquamarine; */
         }
         ul{
+    font-size: 14px;
+    max-width: 100vw;
+            height: 72px;
             display: flex;
-            list-style: none;
+    list-style: none;
+    align-items: center;
+    justify-content: space-around;
+    padding: 35px;
         }
         a{
+            color: #6c757d;;
             text-decoration: none;
+            
+            
         }
-        .alert{
+        #home{
+            padding-bottom:8px;
+            color: #00754a; 
+            font-weight: 550;
+            border-bottom: 2px solid #006241;
+            position: relative;
+    right: 25px;
+            
+        }
+        .li-nav{
+            position: relative;
+            top: 1px;
+            font-size: 15px;
+        }
+        .li-gift{
+    right: 45px;
+            
+        }
+        .li-order{
+    right: 65px;
+            
+        }
+        .li-pay{
+    right: 85px;
+            
+        }
+        .li-store{
+    right: 110px;
+            
+        }
+   
+        .search{
+            width: 264px;
+    height: 36px;
+    border-radius: 17px;
+    position: relative;
+    box-shadow: 0 0 2px #00000012, 0 2px 2px #0000000f, 0 1px 3px #0000001a;
+
+        }
+        #searchimg{
+            position: absolute;
+    top: 7px;
+    left: 14px;
+
+        }
+        #searchinp{     
+            text-indent: 40px;
+    width: 215px;
+    font-size: 12px;
+    border: none;
+    margin: 10px;
+    color: rgb(216, 216, 216);
+}
+input::placeholder {
+  color: rgb(184, 183, 183);
+  
+}
+     /* header end */
+     /* about start */
+       
+        .about{
             max-width: 100%;
             height: 72px;
             background-color: #1e3932;
@@ -31,27 +101,35 @@
             display: flex;
         }
 
+        /* about end */
+
     </style>
 </head>
 <body>
+    <!-- header start -->
     <header>
       <nav>
         <ul>
             <li><img src="assets/logo.png" alt="" width="40"></li>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Gift</a></li>
-            <li><a href="#">Order</a></li>
-            <li><a href="#">Pay</a></li>
-            <li><a href="#">Store</a></li>
-            <li><input type="search" name="search" id="" placeholder="search"></li>
-            <li><img src="assets/account_thin.svg" alt="" width="32"></li>
+            <li><a href="#" id="home">Home</a></li>
+            <li class="li-gift li-nav"><a href="#" >Gift</a></li>
+            <li class="li-order li-nav"><a href="#">Order</a></li>
+            <li class="li-pay li-nav"><a href="#">Pay</a></li>
+            <li class="li-store li-nav"><a href="#">Store</a></li>
+            <li class="search"><img src="assets/search.svg" width="20" alt="" id="searchimg"><input type="search" name="search"  placeholder="Looking for something specific?" id="searchinp"></li>
+            <li><img src="assets/account_thin.svg" alt="" width="32" ></li>
 
         </ul>
       </nav>
-      <div class="alert">
+    </header>
+    <!-- header end -->
+
+    <!-- about start -->
+      <div class="about">
         <h5>Refreshingly Cool Alert!</h5>
         <button type="button">Know More</button>
       </div>
-    </header>
+         <!-- about end -->
+   
 </body>
 </html>
