@@ -1,2 +1,2 @@
 # Starbucks-Clone
-#starbucks using html and css 
+starbucks clone using html and css 
