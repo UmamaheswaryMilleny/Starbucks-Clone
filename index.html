@@ -342,7 +342,111 @@ input::placeholder {
     z-index: 1;
     opacity: 0.5;
         }
+        /* recommends end */
+
+        /* more starts */
+
+        .more{
+            width: 100%;
+            height: 500px;
+            background-color: #EDEBE9;
+            margin-top: 40px;
+        }
+        .more-img{
+            background-size: cover;
+    width: 1096px;
+    height: 372px;
+    background-color: #212529;
+    margin: auto;
+    border-radius: 10px;
+    background-image: url(assets/coffee2.png);
+    background-position: center center;
+    /* background: linear-gradient(359.89deg, #000000bd 19.45%, #00000062 55.07%, #0000 73.63%) !important; */
+
+        }
+        .more-text{
+            display: flex;
+    justify-content: space-between;
+
+        }
+
+        #more-h2{
+            font-family: SoDoSans_Regular, Helvetica, sans-serif;
+    color: #1e3932;
+    margin-left: 42px;
+    padding: 33px 30px;
+    font-weight: 750;
+
+
+        }
+        #more-h6{
+            margin-right: 36px;
+    padding: 30px 30px;
+    font-weight: 700;
+    font-family: SoDoSans_Regular, Helvetica, sans-serif;
+    color: #00754a;
+    font-size: 12px;
+    cursor: pointer;
+        }
+        .img-text{
+            position: relative;
+        }
+        #img-p{
+            font-family: SoDoSans_Regular, Helvetica, sans-serif;
+            font-weight: 600;
+    width: 78px;
+    height: 17px;
+    background-color: #e6edeb;
+    color: #096;
+    border-radius: 4px;
+    font-size: 9px;
+    position: absolute;
+    top: 15px;
+    left: 30px;
+    text-align: center;
+    padding-top: 3px;
+    letter-spacing: 0.5px;
+
+
+        }
+        #img-h{
+            position: absolute;
+            left: 30px;
+    top: 200px;
+    font-size: 28px;
+    color: white;
+    font-family: SoDoSans_Regular, Helvetica, sans-serif;
+    font-weight: 600;
+        }
+        #img-p2{
+            position: absolute;
+            top: 245px;
+    left: 30px;
+    color: white;
+    font-size: 14px;
+
+            
+        }
+        #img-btn{
+           
+            position: absolute;
+    top: 315px;
+    left: 30px;
    
+    width: 200px;
+    height: 32px;
+    border-radius: 16px;
+    border: none;
+    font-size: 12px;
+
+        }
+        #img-a{
+            font-family: SoDoSans_Regular, Helvetica, sans-serif;
+            font-weight: 600;
+             color:#2f343a;
+
+        }
+
 
 
     </style>
@@ -456,6 +560,22 @@ input::placeholder {
                     </div>
                 </div>
             </section>
+              <!-- recommends end -->
+
+              <section class="more">
+                <div class="more-text">
+                    <h2 id="more-h2">Learn more about the world of coffee!</h2>
+                    <h6 id="more-h6">Discover More</h6>
+                </div>
+                <div class="more-img">
+                    <div class="img-text">
+                        <p id="img-p">Coffee Culture</p>
+                    <h5 id="img-h">Art & Science Of Coffee Brewing</h5>
+                    <p id="img-p2">Master the Perfect brew with Starbucks! Learn the art and science of coffee brewing</p>
+                    <button id="img-btn"><a href="" id="img-a">Learn More</a></button>
+                    </div>
+                </div>
+              </section>
    
 </body>
 </html>
