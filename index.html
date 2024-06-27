@@ -20,16 +20,21 @@
             max-width: 100vw;
             height: 72px;
         }
-        ul{
-    font-size: 14px;
+        .list{
+ 
     max-width: 100vw;
   
             height: 72px;
             display: flex;
     list-style: none;
     align-items: center;
-    justify-content: space-around;
-    padding: 35px;
+ 
+        }
+        .list-header{
+            font-size: 14px;
+            justify-content: space-around;
+            padding: 35px;
+
         }
         a{
             color: #000000;;
@@ -181,26 +186,52 @@ input::placeholder {
     position: absolute;
     right: 25px;
     bottom: 25px;
+
+    /* slider starts */
         }
         #slider-a{
             color: white;
             font-family: SoDoSans_Regular, Helvetica, sans-serif;
             font-weight: 550;
         }
-        .swipe{
-            width: 46px;
-    height: 45px;
-    border: 1px solid black;
-    border-radius: 23px;
-    position: absolute;
-    bottom: 100px;
-    right: -20px;
-    background-color: white;
+        #swipe-img-right{
+            position: absolute;
+    bottom: 57px;
+    right: -37px;
+        }
+        #swipe-img-left{
+            position: absolute;
+            bottom: 57px;
+            left: -37px;
+    rotate: 180deg;
+    opacity: 0.5;
+        }
+        /* slider end */
+
+        /* menu start */
+        .items{
+            border-radius: 60px;
+        }
+        #menu-h2{
+            padding: 30px 50px;
+    font-family: SoDoSans_Regular, Helvetica, sans-serif;
+    color:#1e3932;
+    font-weight: 750;
+    margin-left: 30px;
+        }
+        .list-menu{
+            margin-top: 20px;
+            font-size: 14px;
+            justify-content: space-evenly;
 
         }
-        #swipe-img{
-            padding: 13px 17px;
+        .menu-span{
+            display: block;
+            padding-top: 5px;
+            font-family: SoDoSans_Regular, Helvetica, sans-serif;
+            color: #212529;
         }
+
 
     </style>
 </head>
@@ -208,7 +239,7 @@ input::placeholder {
     <!-- header start -->
     <header>
       <nav>
-        <ul>
+        <ul class="list-header list">
             <li><img src="assets/logo.png" alt="" width="40"></li>
             <li><a href="#" id="home">Home</a></li>
             <li class="li-gift li-nav"><a href="#" >Gift</a></li>
@@ -229,8 +260,10 @@ input::placeholder {
         <button type="button" class="btn1">Know More</button>
       </div>
          <!-- about end -->
+
+         <!-- slider start -->
           <div class="slider">
-           <img src="assets/coffee.png" width="100" alt="" id="coffee-mug">
+           <img src="assets/coffee.png" width="100" alt="" id="coffee-mug" style="margin-top: -7px;">
            <div class="slider-text">
             <p class="slider-p1 slp">Now Brewing</p>
             <p class="slider-p2 slp">Starbucks Menu</p>
@@ -241,8 +274,23 @@ input::placeholder {
            <button class="btn btn2">
             <a href="" id="slider-a">Order now</a>
         </button>
-        <div class="swipe"><img src="assets/swipe.svg" alt="" id="swipe-img"></div>
+        <div class="swipe"><a href="#"><img src="assets/swipe.svg" alt="" id="swipe-img-right"></a>
+        <a href="#"><img src="assets/swipe.svg" alt="" id="swipe-img-left"></a></div>
           </div>
+          <!-- slider end -->
+
+          <!-- menu start -->
+           <div class="menu">
+            <h2 id="menu-h2">Hancrafted Curations</h2>
+            <ul class="list-menu list">
+                <li><a href=""><img src="assets/bestselller.webp" alt="" width="108" class="items"><span class="menu-span" style="padding-left: 15px;">Best Seller</span></a></li>
+                <li><a href=""><img src="assets/drinks.webp" alt="" width="108" class="items"><span class="menu-span" style="padding-left: 30px;">Drinks</span></a></li>
+                <li><a href=""><img src="assets/food.webp" alt="" width="108" class="items"><span class="menu-span" style="padding-left: 37px;">Food</span></a></li>
+                <li><a href=""><img src="assets/Merchandise.webp" alt="" width="108" class="items"><span class="menu-span" style="padding-left: 12px;">Merchandise</span></a></li>
+                <li><a href=""><img src="assets/CoffeeAtHome.webp" alt="" width="108" class="items"><span class="menu-span" style="padding-left: 3px;">Coffee At Home</span></a></li>
+                <li><a href=""><img src="assets/ReadyToEat.webp" alt="" width="108" class="items"><span class="menu-span" style="padding-left: 15px;">Ready to Eat</span></a></li>
+            </ul>
+           </div>
    
 </body>
 </html>
