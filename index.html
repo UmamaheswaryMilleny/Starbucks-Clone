@@ -19,6 +19,8 @@
         header{
             max-width: 100vw;
             height: 72px;
+            box-shadow: #1c1c1c1c 1px 1px 2px;
+            border-bottom: 1px solid #dee2e6;
         }
         .list{
  
@@ -241,14 +243,33 @@ input::placeholder {
             background-color: #EDEBE9;
             margin-top: 110px;
         }
+        #leaf{
+            position: absolute;
+    top: 728px;
+    right: 0;
+        
+        }
         .text-rec{
             font-family: SoDoSans_Regular, Helvetica, sans-serif;
             display: flex;
     justify-content: space-between;
-    margin: 26px 26px;
-    padding-top: 25px;
+    margin: 30px 26px;
+    padding-top: 30px;
 
         }
+        .text-h2{
+        font-family: SoDoSans_Regular, Helvetica, sans-serif;
+        color: #1e3932;
+        margin-left: 42px;
+
+    }
+    .text-h6{
+        margin: 0 30px;
+        color: #00754a;
+        font-family: SoDoSans_Regular, Helvetica, sans-serif;
+        font-size: 12px;
+    font-weight: 550;
+    }
         .card-1{
             position: relative;
             width: 348px;
@@ -268,6 +289,8 @@ input::placeholder {
         }
         .cards{
             display: flex;
+            justify-content: center;
+    gap: 10px;
         }
         .card-1{
             box-shadow: 0 2px 4px #00000012, 0 4px 5px #0000000f, 0 1px 10px #0000001a;
@@ -305,11 +328,21 @@ input::placeholder {
         color: white;
 
     }
-    .text-h2{
-        font-family: SoDoSans_Regular, Helvetica, sans-serif;
-        color: #1e3932;
-
-    }
+    #swipe-img-right-c{
+            position: absolute;
+            top: 870px;
+    right: 34px;
+    z-index: 1;
+        }
+        #swipe-img-left-c{
+            position: absolute;
+    top: 880px;
+    left: 45px;
+    rotate: 180deg;
+    z-index: 1;
+    opacity: 0.5;
+        }
+   
 
 
     </style>
@@ -376,12 +409,15 @@ input::placeholder {
             <!-- recommends start -->
              
             <section class="container">
+                <div class="swipe-c"><a href="#"><img src="assets/swipe.svg" alt="" id="swipe-img-right-c">
+                    <a href="#"><img src="assets/swipe.svg" alt="" id="swipe-img-left-c"></a>
                 <div class="text-rec">
                     <h2 class="text-h2">Barista Recommends</h2>
                     <h6 class="text-h6">View Menu</h6>
                 </div>
+                <img src="assets/greyleafright.svg" alt="" width="57" id="leaf">
                 <div class="cards">
-                    <div class="card-1">
+                    <div class="card-1"> 
                         <img src="assets/placeholder2.jpg" alt="" class="square" width="80">
                       <div class="card-body">
                         <img src="assets/veg.svg" alt="" class="veg" width="16">
