@@ -1,581 +1,666 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Starbucks Coffee Company</title>
-    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
     <style>
-         @import url('https://fonts.googleapis.com/css2?family=Reddit+Sans:ital,wght@0,200;1,200&display=swap');
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: "Reddit Sans", sans-serif;
-            /* font-family: SoDoSans_Semibold, Helvetica, sans-serif,thin; */
-            font-weight: 600;
-        }
-        /* header start */
-        header{
-            max-width: 100vw;
-            height: 72px;
-            box-shadow: #1c1c1c1c 1px 1px 2px;
-            border-bottom: 1px solid #dee2e6;
-        }
-        .list{
- 
-    max-width: 100vw;
-  
-            height: 72px;
-            display: flex;
-    list-style: none;
-    align-items: center;
- 
-        }
-        .list-header{
-            font-size: 14px;
-            justify-content: space-around;
-            padding: 35px;
+      @import url("https://fonts.googleapis.com/css2?family=Reddit+Sans:ital,wght@0,200;1,200&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Reddit Sans", sans-serif;
+        /* font-family: SoDoSans_Semibold, Helvetica, sans-serif,thin; */
+        font-weight: 600;
+      }
+      /* header start */
+      header {
+        max-width: 100vw;
+        height: 72px;
+        box-shadow: #1c1c1c1c 1px 1px 2px;
+        border-bottom: 1px solid #dee2e6;
+      }
+      nav {
+        width: 100%;
+        position: fixed;
+        background-color: white;
+        z-index: 100;
+        box-shadow: #1c1c1c1c 1px 1px 2px;
+      }
+      .list {
+        max-width: 100vw;
 
-        }
-        a{
-            color: #000000;;
-            text-decoration: none;
-            
-            
-        }
-        #home{
-            padding-bottom:8px;
-            color: #00754a; 
-            font-weight: 550;
-            border-bottom: 2px solid #006241;
-            position: relative;
-            font-family: SoDoSans_Semibold, Helvetica, sans-serif,thin;
-    right: 25px;
-            
-        }
-        .li-nav{
-            position: relative;
-            top: 1px;
-            font-size: 15px;
-        }
-        .li-gift{
-    right: 45px;
-            
-        }
-        .li-order{
-    right: 65px;
-            
-        }
-        .li-pay{
-    right: 85px;
-            
-        }
-        .li-store{
-    right: 110px;
-            
-        }
-   
-        .search{
-            width: 264px;
-    height: 36px;
-    border-radius: 17px;
-    position: relative;
-    box-shadow: 0 0 2px #00000012, 0 2px 2px #0000000f, 0 1px 3px #0000001a;
+        height: 72px;
+        display: flex;
+        list-style: none;
+        align-items: center;
+      }
+      .list-header {
+        font-size: 14px;
+        justify-content: space-around;
+        padding: 35px;
+      }
+      a {
+        color: #000000;
+        text-decoration: none;
+      }
+      #home {
+        padding-bottom: 8px;
+        color: #00754a;
+        font-weight: 550;
+        border-bottom: 2px solid #006241;
+        position: relative;
+        font-family: SoDoSans_Semibold, Helvetica, sans-serif, thin;
+        right: 25px;
+      }
+      .li-nav {
+        position: relative;
+        top: 1px;
+        font-size: 15px;
+      }
+      .li-gift {
+        right: 45px;
+      }
+      .li-order {
+        right: 65px;
+      }
+      .li-pay {
+        right: 85px;
+      }
+      .li-store {
+        right: 110px;
+      }
 
-        }
-        #searchimg{
-            position: absolute;
-    top: 7px;
-    left: 14px;
+      .search {
+        width: 264px;
+        height: 36px;
+        border-radius: 17px;
+        position: relative;
+        box-shadow: 0 0 2px #00000012, 0 2px 2px #0000000f, 0 1px 3px #0000001a;
+      }
+      #searchimg {
+        position: absolute;
+        top: 7px;
+        left: 14px;
+      }
+      #searchinp {
+        text-indent: 40px;
+        width: 225px;
+        font-size: 12px;
+        border: none;
+        margin: 10px;
+        color: rgb(216, 216, 216);
+      }
+      input::placeholder {
+        color: rgb(173, 172, 172);
+      }
+      /* header end */
+      /* about start */
 
-        }
-        #searchinp{     
-            text-indent: 40px;
-    width: 225px;
-    font-size: 12px;
-    border: none;
-    margin: 10px;
-    color: rgb(216, 216, 216);
-}
-input::placeholder {
-  color: rgb(173, 172, 172);
-  
-}
-     /* header end */
-     /* about start */
-       
-        .about{
-            max-width: 100%;
-            height: 80px;
-            background-color: #1e3932;
-            color: white;
-            display: flex;
-    align-items: center;
-    justify-content: space-between;
-    box-shadow: 0 2px 4px #00000012, 0 4px 5px #0000000f, 0 1px 10px #0000001a;
-        }
-        #about-h5{
-            margin: 74px;
-    font-size: 20px;
-        }
-        .btn1{
-            margin: 88px;
-    height: 32px;
-    width: 96px;
-    border-radius: 17px;
-    font-size: 11px;
-    font-family: SoDoSans_Semibold, Helvetica, sans-serif,thin;
-    background-color:#1e3932;
-    border: 1px solid white;
-    color: #ffffff;
-    
-        }
-      
-        /* about end */
+      .about {
+        max-width: 100%;
+        height: 80px;
+        background-color: #1e3932;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        box-shadow: 0 2px 4px #00000012, 0 4px 5px #0000000f,
+          0 1px 10px #0000001a;
+      }
+      #about-h5 {
+        margin: 74px;
+        font-size: 20px;
+      }
+      .btn1 {
+        margin: 88px;
+        height: 32px;
+        width: 96px;
+        border-radius: 17px;
+        font-size: 11px;
+        font-family: SoDoSans_Semibold, Helvetica, sans-serif, thin;
+        background-color: #1e3932;
+        border: 1px solid white;
+        color: #ffffff;
+      }
 
-        /* slider start */
-        .slider{
-            width:1096px;
-            height:220px;
-            background-color: #006241;
-    margin: 32px auto;
-    border-radius: 7px;
-    padding-top: 5px;
-    position: relative;
-        }
-        .slider-text{
-            position: absolute;
-            top: 30px;
-    left: 140px;
-    font-family: SoDoSans_Semibold, Helvetica, sans-serif,thin;
-        }
+      /* about end */
 
+      /* slider start */
+      .slider {
+        width: 1096px;
+        height: 220px;
+        background-color: #006241;
+        margin: 32px auto;
+        border-radius: 7px;
+        padding-top: 5px;
+        position: relative;
+      }
+      .slider-text {
+        position: absolute;
+        top: 30px;
+        left: 140px;
+        font-family: SoDoSans_Semibold, Helvetica, sans-serif, thin;
+      }
 
+      .slp {
+        font-size: 14px;
+        font-family: SoDoSans_Regular, Helvetica, sans-serif;
+        font-weight: 500;
+      }
+      .slider-p2 {
+        font-size: 20px;
+        font-weight: 600;
+        padding-top: 21px;
+      }
+      .slider-p3 {
+        padding-top: 16px;
+      }
+      .slider-p4 {
+        font-size: 12px;
+        padding-top: 40px;
+        color: #1e3932;
+      }
+      .slider-p5 {
+        font-size: 14px;
+        padding-top: 5px;
+        font-weight: 600;
+      }
+      .btn2 {
+        border: none;
+        width: 200px;
+        height: 49px;
+        background-color: #00754a;
+        border-radius: 30px;
+        font-family: SoDoSans_Regular, Helvetica, sans-serif;
+        font-weight: 500;
+        position: absolute;
+        right: 25px;
+        bottom: 25px;
 
-        .slp{
-            font-size: 14px;
-            font-family: SoDoSans_Regular, Helvetica, sans-serif;
-    font-weight: 500;
+        /* slider starts */
+      }
+      #slider-a {
+        color: white;
+        font-family: SoDoSans_Regular, Helvetica, sans-serif;
+        font-weight: 550;
+      }
+      #swipe-img-right {
+        position: absolute;
+        bottom: 57px;
+        right: -37px;
+      }
+      #swipe-img-left {
+        position: absolute;
+        bottom: 57px;
+        left: -37px;
+        rotate: 180deg;
+        opacity: 0.5;
+      }
+      /* slider end */
 
-        }
-        .slider-p2{
-            font-size: 20px;
-    font-weight: 600;
-    padding-top: 21px;
-        }
-        .slider-p3{
-            padding-top: 16px;
-        }
-        .slider-p4{
-            font-size: 12px;
-    padding-top: 40px;
-    color:#1e3932;
-        }
-        .slider-p5{
-            font-size: 14px;
-    padding-top: 5px;
-    font-weight: 600;
-        }
-        .btn2{
-            border: none;
-    width: 200px;
-    height: 49px;
-    background-color: #00754a;
-    border-radius: 30px;
-    font-family: SoDoSans_Regular, Helvetica, sans-serif;
-    font-weight: 500;
-    position: absolute;
-    right: 25px;
-    bottom: 25px;
+      /* menu start */
+      .items {
+        border-radius: 60px;
+      }
+      .items:hover {
+        border: 2px solid #00804c;
+      }
+      #menu-h2 {
+        padding: 30px 50px;
+        font-family: SoDoSans_Regular, Helvetica, sans-serif;
+        color: #1e3932;
+        font-weight: 750;
+        margin-left: 30px;
+      }
+      .list-menu {
+        margin-top: 20px;
+        font-size: 14px;
+        justify-content: space-evenly;
+      }
+      .menu-span {
+        display: block;
+        padding-top: 5px;
+        font-family: SoDoSans_Regular, Helvetica, sans-serif;
+        color: #212529;
+      }
 
-    /* slider starts */
-        }
-        #slider-a{
-            color: white;
-            font-family: SoDoSans_Regular, Helvetica, sans-serif;
-            font-weight: 550;
-        }
-        #swipe-img-right{
-            position: absolute;
-    bottom: 57px;
-    right: -37px;
-        }
-        #swipe-img-left{
-            position: absolute;
-            bottom: 57px;
-            left: -37px;
-    rotate: 180deg;
-    opacity: 0.5;
-        }
-        /* slider end */
+      /* menu end */
 
-        /* menu start */
-        .items{
-            border-radius: 60px;
-        }
-        #menu-h2{
-            padding: 30px 50px;
-    font-family: SoDoSans_Regular, Helvetica, sans-serif;
-    color:#1e3932;
-    font-weight: 750;
-    margin-left: 30px;
-        }
-        .list-menu{
-            margin-top: 20px;
-            font-size: 14px;
-            justify-content: space-evenly;
-
-        }
-        .menu-span{
-            display: block;
-            padding-top: 5px;
-            font-family: SoDoSans_Regular, Helvetica, sans-serif;
-            color: #212529;
-        }
-
-        /* menu end */
-
-        /* recommends start */
-        .container{
-            width: 100%;
-            height: 316px;
-            background-color: #EDEBE9;
-            margin-top: 110px;
-        }
-        #leaf{
-            position: absolute;
-    top: 728px;
-    right: 0;
-        
-        }
-        .text-rec{
-            font-family: SoDoSans_Regular, Helvetica, sans-serif;
-            display: flex;
-    justify-content: space-between;
-    margin: 30px 26px;
-    padding-top: 30px;
-
-        }
-        .text-h2{
+      /* recommends start */
+      .container {
+        width: 100%;
+        height: 316px;
+        background-color: #edebe9;
+        margin-top: 110px;
+      }
+      #leaf {
+        position: absolute;
+        top: 728px;
+        right: 0;
+      }
+      .text-rec {
+        font-family: SoDoSans_Regular, Helvetica, sans-serif;
+        display: flex;
+        justify-content: space-between;
+        margin: 30px 26px;
+        padding-top: 30px;
+      }
+      .text-h2 {
         font-family: SoDoSans_Regular, Helvetica, sans-serif;
         color: #1e3932;
         margin-left: 42px;
-
-    }
-    .text-h6{
+      }
+      .text-h6 {
         margin: 0 30px;
         color: #00754a;
         font-family: SoDoSans_Regular, Helvetica, sans-serif;
         font-size: 12px;
-    font-weight: 550;
-    }
-        .card-1{
-            position: relative;
-            width: 348px;
-            height: 160px;
-            background-color: white;
-            border-radius: 10px;
-            margin-left: 15px;
-        }
-        .square{
-            border-radius: 10px;
-    margin: 22px;
-        }
-        .card-body{
-            position: absolute;
-    display: inline;
-    top: 26px;
-        }
-        .cards{
-            display: flex;
-            justify-content: center;
-    gap: 10px;
-        }
-        .card-1{
-            box-shadow: 0 2px 4px #00000012, 0 4px 5px #0000000f, 0 1px 10px #0000001a;
-        }
-        .card-h3,.card-h4{
-            font-size: 14px;
-            font-family: SoDoSans_Regular, Helvetica, sans-serif;
-
-        }
-    .card-h5{
-        font-size: 9px;
-        font-family: Pike_Regular, Helvetica, sans-serif ;
-        color: #6c757d;
-    }
-    .card-footer{
+        font-weight: 550;
+      }
+      .card-1 {
+        position: relative;
+        width: 348px;
+        height: 160px;
+        background-color: white;
+        border-radius: 10px;
+        margin-left: 15px;
+      }
+      .square {
+        border-radius: 10px;
+        margin: 22px;
+      }
+      .card-body {
+        position: absolute;
+        display: inline;
+        top: 26px;
+      }
+      .cards {
         display: flex;
-    justify-content: space-between;
-    }
-    .card-h4{
+        justify-content: center;
+        gap: 10px;
+      }
+      .card-1 {
+        box-shadow: 0 2px 4px #00000012, 0 4px 5px #0000000f,
+          0 1px 10px #0000001a;
+      }
+      .card-h3,
+      .card-h4 {
+        font-size: 14px;
+        font-family: SoDoSans_Regular, Helvetica, sans-serif;
+      }
+      .card-h5 {
+        font-size: 9px;
+        font-family: Pike_Regular, Helvetica, sans-serif;
+        color: #6c757d;
+      }
+      .card-footer {
+        display: flex;
+        justify-content: space-between;
+      }
+      .card-h4 {
         margin: -7px 23px;
-    }
-    .card-btn{
+      }
+      .card-btn {
         font-size: 12px;
-        margin:-18px 22px;
-    width: 96px;
-    height: 32px;
-    border-radius: 20px;
-    border: none;
-    background-color:#00754a;
-    box-shadow: 0 2px 4px #00000012, 0 4px 5px #0000000f, 0 1px 10px #0000001a;
-   
-    }
-    .card-a{
+        margin: -18px 22px;
+        width: 96px;
+        height: 32px;
+        border-radius: 20px;
+        border: none;
+        background-color: #00754a;
+        box-shadow: 0 2px 4px #00000012, 0 4px 5px #0000000f,
+          0 1px 10px #0000001a;
+      }
+      .card-a {
         font-family: SoDoSans_Regular, Helvetica, sans-serif;
         color: white;
+      }
+      #swipe-img-right-c {
+        position: absolute;
+        top: 870px;
+        right: 34px;
+        z-index: 1;
+      }
+      #swipe-img-left-c {
+        position: absolute;
+        top: 880px;
+        left: 45px;
+        rotate: 180deg;
+        z-index: 1;
+        opacity: 0.5;
+      }
+      /* recommends end */
 
-    }
-    #swipe-img-right-c{
-            position: absolute;
-            top: 870px;
-    right: 34px;
-    z-index: 1;
-        }
-        #swipe-img-left-c{
-            position: absolute;
-    top: 880px;
-    left: 45px;
-    rotate: 180deg;
-    z-index: 1;
-    opacity: 0.5;
-        }
-        /* recommends end */
+      /* more starts */
 
-        /* more starts */
+      .more {
+        width: 100%;
+        height: 500px;
+        background-color: #edebe9;
+        margin-top: 40px;
+      }
+      .more-img {
+        background-size: cover;
+        width: 1096px;
+        height: 372px;
+        background-color: #212529;
+        margin: auto;
+        border-radius: 10px;
+        background-image: url(assets/coffee2.png);
+        background-position: center center;
+        /* background: linear-gradient(359.89deg, #000000bd 19.45%, #00000062 55.07%, #0000 73.63%) !important; */
+      }
+      .more-text {
+        display: flex;
+        justify-content: space-between;
+      }
 
-        .more{
-            width: 100%;
-            height: 500px;
-            background-color: #EDEBE9;
-            margin-top: 40px;
-        }
-        .more-img{
-            background-size: cover;
-    width: 1096px;
-    height: 372px;
-    background-color: #212529;
-    margin: auto;
-    border-radius: 10px;
-    background-image: url(assets/coffee2.png);
-    background-position: center center;
-    /* background: linear-gradient(359.89deg, #000000bd 19.45%, #00000062 55.07%, #0000 73.63%) !important; */
+      #more-h2 {
+        font-family: SoDoSans_Regular, Helvetica, sans-serif;
+        color: #1e3932;
+        margin-left: 42px;
+        padding: 33px 30px;
+        font-weight: 750;
+      }
+      #more-h6 {
+        margin-right: 36px;
+        padding: 30px 30px;
+        font-weight: 700;
+        font-family: SoDoSans_Regular, Helvetica, sans-serif;
+        color: #00754a;
+        font-size: 12px;
+        cursor: pointer;
+      }
+      .img-text {
+        position: relative;
+      }
+      #img-p {
+        font-family: SoDoSans_Regular, Helvetica, sans-serif;
+        font-weight: 600;
+        width: 78px;
+        height: 17px;
+        background-color: #e6edeb;
+        color: #096;
+        border-radius: 4px;
+        font-size: 9px;
+        position: absolute;
+        top: 15px;
+        left: 30px;
+        text-align: center;
+        padding-top: 3px;
+        letter-spacing: 0.5px;
+      }
+      #img-h {
+        position: absolute;
+        left: 30px;
+        top: 200px;
+        font-size: 28px;
+        color: white;
+        font-family: SoDoSans_Regular, Helvetica, sans-serif;
+        font-weight: 600;
+      }
+      #img-p2 {
+        position: absolute;
+        top: 245px;
+        left: 30px;
+        color: white;
+        font-size: 14px;
+      }
+      #img-btn {
+        position: absolute;
+        top: 315px;
+        left: 30px;
 
-        }
-        .more-text{
-            display: flex;
-    justify-content: space-between;
+        width: 200px;
+        height: 32px;
+        border-radius: 16px;
+        border: none;
+        font-size: 12px;
+      }
+      #img-a {
+        font-family: SoDoSans_Regular, Helvetica, sans-serif;
+        font-weight: 600;
+        color: #2f343a;
+      }
+      /* more end */
 
-        }
+      /* footer start */
+      footer {
+        width: 100%;
+        height: 912px;
+        background-color: #0e392c;
+      }
 
-        #more-h2{
-            font-family: SoDoSans_Regular, Helvetica, sans-serif;
-    color: #1e3932;
-    margin-left: 42px;
-    padding: 33px 30px;
-    font-weight: 750;
-
-
-        }
-        #more-h6{
-            margin-right: 36px;
-    padding: 30px 30px;
-    font-weight: 700;
-    font-family: SoDoSans_Regular, Helvetica, sans-serif;
-    color: #00754a;
-    font-size: 12px;
-    cursor: pointer;
-        }
-        .img-text{
-            position: relative;
-        }
-        #img-p{
-            font-family: SoDoSans_Regular, Helvetica, sans-serif;
-            font-weight: 600;
-    width: 78px;
-    height: 17px;
-    background-color: #e6edeb;
-    color: #096;
-    border-radius: 4px;
-    font-size: 9px;
-    position: absolute;
-    top: 15px;
-    left: 30px;
-    text-align: center;
-    padding-top: 3px;
-    letter-spacing: 0.5px;
-
-
-        }
-        #img-h{
-            position: absolute;
-            left: 30px;
-    top: 200px;
-    font-size: 28px;
-    color: white;
-    font-family: SoDoSans_Regular, Helvetica, sans-serif;
-    font-weight: 600;
-        }
-        #img-p2{
-            position: absolute;
-            top: 245px;
-    left: 30px;
-    color: white;
-    font-size: 14px;
-
-            
-        }
-        #img-btn{
-           
-            position: absolute;
-    top: 315px;
-    left: 30px;
-   
-    width: 200px;
-    height: 32px;
-    border-radius: 16px;
-    border: none;
-    font-size: 12px;
-
-        }
-        #img-a{
-            font-family: SoDoSans_Regular, Helvetica, sans-serif;
-            font-weight: 600;
-             color:#2f343a;
-
-        }
-
-
-
+      /* footer end */
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <!-- header start -->
     <header>
       <nav>
         <ul class="list-header list">
-            <li><img src="assets/logo.png" alt="" width="40"></li>
-            <li><a href="#" id="home">Home</a></li>
-            <li class="li-gift li-nav"><a href="#" >Gift</a></li>
-            <li class="li-order li-nav"><a href="#">Order</a></li>
-            <li class="li-pay li-nav"><a href="#">Pay</a></li>
-            <li class="li-store li-nav"><a href="#">Store</a></li>
-            <li class="search"><img src="assets/search.svg" width="20" alt="" id="searchimg"><input type="search" name="search"  placeholder="Looking for something specific?" id="searchinp"></li>
-            <li><img src="assets/account_thin.svg" alt="" width="32" ></li>
-
+          <li><img src="assets/logo.png" alt="" width="40" /></li>
+          <li><a href="#" id="home">Home</a></li>
+          <li class="li-gift li-nav"><a href="#">Gift</a></li>
+          <li class="li-order li-nav"><a href="#">Order</a></li>
+          <li class="li-pay li-nav"><a href="#">Pay</a></li>
+          <li class="li-store li-nav"><a href="#">Store</a></li>
+          <li class="search">
+            <img
+              src="assets/search.svg"
+              width="20"
+              alt=""
+              id="searchimg"
+            /><input
+              type="search"
+              name="search"
+              placeholder="Looking for something specific?"
+              id="searchinp"
+            />
+          </li>
+          <li><img src="assets/account_thin.svg" alt="" width="32" /></li>
         </ul>
       </nav>
     </header>
     <!-- header end -->
 
     <!-- about start -->
-      <div class="about">
-        <h5 id="about-h5">Starbucks</h5>
-        <button type="button" class="btn1">Know More</button>
+    <div class="about">
+      <h5 id="about-h5">Starbucks</h5>
+      <button type="button" class="btn1">Know More</button>
+    </div>
+    <!-- about end -->
+
+    <!-- slider start -->
+    <div class="slider">
+      <img
+        src="assets/coffee.png"
+        width="100"
+        alt=""
+        id="coffee-mug"
+        style="margin-top: -7px"
+      />
+      <div class="slider-text">
+        <p class="slider-p1 slp">Now Brewing</p>
+        <p class="slider-p2 slp">Starbucks Menu</p>
+        <p class="slider-p3 slp">
+          Indulge in season's feasting! Make your sips extra special. Explore
+          Menu.
+        </p>
+        <p class="slider-p4 slp">Starting From</p>
+        <p class="slider-p5 slp">Rs 250</p>
       </div>
-         <!-- about end -->
+      <button class="btn btn2">
+        <a href="" id="slider-a">Order now</a>
+      </button>
+      <div class="swipe">
+        <a href="#"
+          ><img src="assets/swipe.svg" alt="" id="swipe-img-right"
+        /></a>
+        <a href="#"
+          ><img src="assets/swipe.svg" alt="" id="swipe-img-left"
+        /></a>
+      </div>
+    </div>
+    <!-- slider end -->
 
-         <!-- slider start -->
-          <div class="slider">
-           <img src="assets/coffee.png" width="100" alt="" id="coffee-mug" style="margin-top: -7px;">
-           <div class="slider-text">
-            <p class="slider-p1 slp">Now Brewing</p>
-            <p class="slider-p2 slp">Starbucks Menu</p>
-            <p class="slider-p3 slp"> Indulge in season's feasting! Make your sips extra special. Explore Menu.</p>
-            <p class="slider-p4 slp">Starting From</p>
-            <p class="slider-p5 slp">Rs 250</p>
-           </div>
-           <button class="btn btn2">
-            <a href="" id="slider-a">Order now</a>
-        </button>
-        <div class="swipe"><a href="#"><img src="assets/swipe.svg" alt="" id="swipe-img-right"></a>
-        <a href="#"><img src="assets/swipe.svg" alt="" id="swipe-img-left"></a></div>
-          </div>
-          <!-- slider end -->
+    <!-- menu start -->
+    <section class="menu">
+      <h2 id="menu-h2">Hancrafted Curations</h2>
+      <ul class="list-menu list">
+        <li>
+          <a href=""
+            ><img
+              src="assets/bestselller.webp"
+              alt=""
+              width="108"
+              class="items"
+            /><span class="menu-span" style="padding-left: 15px"
+              >Best Seller</span
+            ></a
+          >
+        </li>
+        <li>
+          <a href=""
+            ><img
+              src="assets/drinks.webp"
+              alt=""
+              width="108"
+              class="items"
+            /><span class="menu-span" style="padding-left: 30px"
+              >Drinks</span
+            ></a
+          >
+        </li>
+        <li>
+          <a href=""
+            ><img
+              src="assets/food.webp"
+              alt=""
+              width="108"
+              class="items"
+            /><span class="menu-span" style="padding-left: 37px">Food</span></a
+          >
+        </li>
+        <li>
+          <a href=""
+            ><img
+              src="assets/Merchandise.webp"
+              alt=""
+              width="108"
+              class="items"
+            /><span class="menu-span" style="padding-left: 12px"
+              >Merchandise</span
+            ></a
+          >
+        </li>
+        <li>
+          <a href=""
+            ><img
+              src="assets/CoffeeAtHome.webp"
+              alt=""
+              width="108"
+              class="items"
+            /><span class="menu-span" style="padding-left: 3px"
+              >Coffee At Home</span
+            ></a
+          >
+        </li>
+        <li>
+          <a href=""
+            ><img
+              src="assets/ReadyToEat.webp"
+              alt=""
+              width="108"
+              class="items"
+            /><span class="menu-span" style="padding-left: 15px"
+              >Ready to Eat</span
+            ></a
+          >
+        </li>
+      </ul>
+    </section>
 
-          <!-- menu start -->
-           <section class="menu">
-            <h2 id="menu-h2">Hancrafted Curations</h2>
-            <ul class="list-menu list">
-                <li><a href=""><img src="assets/bestselller.webp" alt="" width="108" class="items"><span class="menu-span" style="padding-left: 15px;">Best Seller</span></a></li>
-                <li><a href=""><img src="assets/drinks.webp" alt="" width="108" class="items"><span class="menu-span" style="padding-left: 30px;">Drinks</span></a></li>
-                <li><a href=""><img src="assets/food.webp" alt="" width="108" class="items"><span class="menu-span" style="padding-left: 37px;">Food</span></a></li>
-                <li><a href=""><img src="assets/Merchandise.webp" alt="" width="108" class="items"><span class="menu-span" style="padding-left: 12px;">Merchandise</span></a></li>
-                <li><a href=""><img src="assets/CoffeeAtHome.webp" alt="" width="108" class="items"><span class="menu-span" style="padding-left: 3px;">Coffee At Home</span></a></li>
-                <li><a href=""><img src="assets/ReadyToEat.webp" alt="" width="108" class="items"><span class="menu-span" style="padding-left: 15px;">Ready to Eat</span></a></li>
-            </ul>
-           </section>
+    <!-- menu end -->
 
-           <!-- menu end -->
+    <!-- recommends start -->
+    <section class="container">
+        <div class="swipe-c"><a href="#"><img src="assets/swipe.svg" alt="" id="swipe-img-right-c">
+            <a href="#"><img src="assets/swipe.svg" alt="" id="swipe-img-left-c"></a>
+        <div class="text-rec">
+            <h2 class="text-h2">Barista Recommends</h2>
+            <h6 class="text-h6">View Menu</h6>
+        </div>
+        <img src="assets/greyleafright.svg" alt="" width="57" id="leaf">
+        <div class="cards">
+            <div class="card-1"> 
+                <img src="assets/placeholder2.jpg" alt="" class="square" width="80">
+              <div class="card-body">
+                <img src="assets/veg.svg" alt="" class="veg" width="16">
+                <h3 class="card-h3">Cappuccino</h3>
+                <h5 class="card-h5">SHORT()</h5>
+              </div>
+               <div class="card-footer">
+                <h4 class="card-h4">₹ 283.50</h4>
+                <button class="card-btn"><a href="" class="card-a">Add Item</a></button>
+               </div>
 
-            <!-- recommends start -->
-             
-            <section class="container">
-                <div class="swipe-c"><a href="#"><img src="assets/swipe.svg" alt="" id="swipe-img-right-c">
-                    <a href="#"><img src="assets/swipe.svg" alt="" id="swipe-img-left-c"></a>
-                <div class="text-rec">
-                    <h2 class="text-h2">Barista Recommends</h2>
-                    <h6 class="text-h6">View Menu</h6>
+            </div>
+            <div class="card-2 card-1">
+                <img src="assets/signature.webp" alt="" class="square" width="80">
+                <div class="card-body">
+                  <img src="assets/veg.svg" alt="" class="veg" width="16">
+                  <h3 class="card-h3">Signature Hot Chocolate</h3>
+                  <h5 class="card-h5">SHORT()</h5>
                 </div>
-                <img src="assets/greyleafright.svg" alt="" width="57" id="leaf">
-                <div class="cards">
-                    <div class="card-1"> 
-                        <img src="assets/placeholder2.jpg" alt="" class="square" width="80">
-                      <div class="card-body">
-                        <img src="assets/veg.svg" alt="" class="veg" width="16">
-                        <h3 class="card-h3">Cappuccino</h3>
-                        <h5 class="card-h5">SHORT()</h5>
-                      </div>
-                       <div class="card-footer">
-                        <h4 class="card-h4">₹ 283.50</h4>
-                        <button class="card-btn"><a href="" class="card-a">Add Item</a></button>
-                       </div>
+                 <div class="card-footer">
+                  <h4 class="card-h4">₹ 294.00</h4>
+                  <button class="card-btn"><a href="" class="card-a">Add Item</a></button>
+                 </div>
+            </div>
+            <div class="card-3 card-1">
+                 <img src="assets/placeholder2.jpg" alt="" class="square" width="80">
+              <div class="card-body">
+                <img src="assets/veg.svg" alt="" class="veg" width="16">
+                <h3 class="card-h3">Vanilla Milkshake</h3>
+                <h5 class="card-h5">SHORT()</h5>
+              </div>
+               <div class="card-footer">
+                <h4 class="card-h4">₹ 367.50</h4>
+                <button class="card-btn"><a href="" class="card-a">Add Item</a></button>
+                
+               </div>
+            </div>
+        </div>
+    </section>
+    <!-- recommends end -->
 
-                    </div>
-                    <div class="card-2 card-1">
-                        <img src="assets/signature.webp" alt="" class="square" width="80">
-                        <div class="card-body">
-                          <img src="assets/veg.svg" alt="" class="veg" width="16">
-                          <h3 class="card-h3">Signature Hot Chocolate</h3>
-                          <h5 class="card-h5">SHORT()</h5>
-                        </div>
-                         <div class="card-footer">
-                          <h4 class="card-h4">₹ 294.00</h4>
-                          <button class="card-btn"><a href="" class="card-a">Add Item</a></button>
-                         </div>
-                    </div>
-                    <div class="card-3 card-1">
-                         <img src="assets/placeholder2.jpg" alt="" class="square" width="80">
-                      <div class="card-body">
-                        <img src="assets/veg.svg" alt="" class="veg" width="16">
-                        <h3 class="card-h3">Vanilla Milkshake</h3>
-                        <h5 class="card-h5">SHORT()</h5>
-                      </div>
-                       <div class="card-footer">
-                        <h4 class="card-h4">₹ 367.50</h4>
-                        <button class="card-btn"><a href="" class="card-a">Add Item</a></button>
-                       </div>
-                    </div>
-                </div>
-            </section>
-              <!-- recommends end -->
+    <!-- more start -->
 
-              <section class="more">
-                <div class="more-text">
-                    <h2 id="more-h2">Learn more about the world of coffee!</h2>
-                    <h6 id="more-h6">Discover More</h6>
-                </div>
-                <div class="more-img">
-                    <div class="img-text">
-                        <p id="img-p">Coffee Culture</p>
-                    <h5 id="img-h">Art & Science Of Coffee Brewing</h5>
-                    <p id="img-p2">Master the Perfect brew with Starbucks! Learn the art and science of coffee brewing</p>
-                    <button id="img-btn"><a href="" id="img-a">Learn More</a></button>
-                    </div>
-                </div>
-              </section>
-   
-</body>
+    <section class="more">
+      <div class="more-text">
+        <h2 id="more-h2">Learn more about the world of coffee!</h2>
+        <h6 id="more-h6">Discover More</h6>
+      </div>
+      <div class="more-img">
+        <div class="img-text">
+          <p id="img-p">Coffee Culture</p>
+          <h5 id="img-h">Art & Science Of Coffee Brewing</h5>
+          <p id="img-p2">
+            Master the Perfect brew with Starbucks! Learn the art and science of
+            coffee brewing
+          </p>
+          <button id="img-btn"><a href="" id="img-a">Learn More</a></button>
+        </div>
+      </div>
+    </section>
+    <!-- more end -->
+
+    <!-- footer start -->
+    <footer></footer>
+    <!-- footer end -->
+  </body>
 </html>
