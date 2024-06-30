@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Starbucks Coffee Company</title>
     <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <!-- header start -->
@@ -31,7 +31,14 @@
               id="searchinp"
             />
           </li>
-          <li><img src="assets/account_thin.svg" alt="" width="32" /></li>
+          <li>
+            <img
+              src="assets/account_thin.svg"
+              alt=""
+              width="32"
+              style="cursor: pointer"
+            />
+          </li>
         </ul>
       </nav>
     </header>
@@ -40,12 +47,14 @@
     <!-- about start -->
     <div class="about">
       <h5 id="about-h5">Starbucks</h5>
-      <button type="button" class="btn1">Know More</button>
+      <button type="button" class="btn1" style="cursor: pointer">
+        Know More
+      </button>
     </div>
     <!-- about end -->
 
     <!-- slider start -->
-    <div class="slider">
+    <div class="slider" style="cursor: pointer">
       <img
         src="assets/coffee.png"
         width="100"
@@ -168,7 +177,7 @@
       </div>
       <div class="text-rec">
         <h2 class="text-h2">Barista Recommends</h2>
-        <h6 class="text-h6">View Menu</h6>
+        <h6 class="text-h6" style="cursor: pointer">View Menu</h6>
       </div>
       <img src="assets/greyleafright.svg" alt="" width="57" id="leaf" />
       <div class="cards">
@@ -191,7 +200,7 @@
           <div class="card-body">
             <img src="assets/veg.svg" alt="" class="veg" width="16" />
             <h3 class="card-h3">Signature Hot Chocolate</h3>
-            <h5 class="card-h5">SHORT()</h5>
+            <h5 class="card-h5">SHORT(237ML)284kcal</h5>
           </div>
           <div class="card-footer">
             <h4 class="card-h4">₹ 294.00</h4>
@@ -205,7 +214,7 @@
           <div class="card-body">
             <img src="assets/veg.svg" alt="" class="veg" width="16" />
             <h3 class="card-h3">Vanilla Milkshake</h3>
-            <h5 class="card-h5">SHORT()</h5>
+            <h5 class="card-h5">TALL(354 ML)PER SERVE (354ml) - 531 Kcal</h5>
           </div>
           <div class="card-footer">
             <h4 class="card-h4">₹ 367.50</h4>
@@ -237,17 +246,27 @@
           <button id="img-btn"><a href="" id="img-a">Learn More</a></button>
         </div>
       </div>
-
     </section>
     <!-- more end -->
 
     <!-- footer start -->
     <footer>
       <div class="container-footer">
-        <div class="footer-img"><img src="assets/logo.png" alt="" width="60" /></div>
+        <div class="footer-img">
+          <img src="assets/logo.png" alt="" width="60" />
+        </div>
         <div class="aboutus">
           <ul>
-            <li><a href="">About Us</a></li>
+            <li>
+              <a
+                href=""
+                style="
+                  font-family: SoDoSans_Regular, Helvetica, sans-serif;
+                  font-weight: 600;
+                "
+                >About Us</a
+              >
+            </li>
             <li><a href="">Our Heritage</a></li>
             <li><a href="">Coffeehouse</a></li>
             <li><a href="">Our Company</a></li>
@@ -255,28 +274,62 @@
         </div>
         <div class="respon">
           <ul>
-            <li><a href="">Responsibility</a></li>
+            <li>
+              <a
+                href=""
+                style="
+                  font-family: SoDoSans_Regular, Helvetica, sans-serif;
+                  font-weight: 600;
+                "
+                >Responsibility</a
+              >
+            </li>
             <li><a href="">Diversity</a></li>
             <li><a href="">Ethical Sourcing</a></li>
-            <li><a href="">Environmental Stewardship</a></li>
+            <li>
+              <a href="" style="line-height: 1.7">Environmental Stewardship</a>
+            </li>
             <li><a href="">Learn More</a></li>
           </ul>
         </div>
         <div class="links">
           <ul>
-            <li><a href="">Quick Links</a></li>
+            <li>
+              <a
+                href=""
+                style="
+                  font-family: SoDoSans_Regular, Helvetica, sans-serif;
+                  font-weight: 600;
+                "
+                >Quick Links</a
+              >
+            </li>
             <li><a href="">Privacy Policy</a></li>
             <li><a href="">FAQs</a></li>
-            <li><a href="">Starbucks India Mobile App Terms of Use </a></li>
+            <li>
+              <a href="" style="line-height: 1.7"
+                >Starbucks India Mobile App Terms of Use
+              </a>
+            </li>
             <li><a href="">Customer Service </a></li>
-            <li><a href="">Starbucks Rewards Day Offer </a></li>
+            <li>
+              <a href="" style="line-height: 1.7"
+                >Starbucks Rewards Day Offer
+              </a>
+            </li>
             <li><a href="">Delivery</a></li>
             <li><a href="">Season's Gifting </a></li>
             <li>
-              <a href="">Offer for Beverage Subscription at Starbucks. </a>
+              <a href="" style="line-height: 1.7"
+                >Offer for Beverage Subscription at Starbucks.
+              </a>
             </li>
             <li><a href="">Beverage Subscription </a></li>
-            <li><a href="">Loyalty Program Terms and Conditions </a></li>
+            <li>
+              <a href="" style="line-height: 1.7"
+                >Loyalty Program Terms and Conditions
+              </a>
+            </li>
           </ul>
         </div>
         <div class="smedia">
@@ -295,21 +348,26 @@
         </div>
         <div class="store">
           <img src="assets/appstoreiOS.png" alt="" width="194" height="62" />
-          <img src="assets/appstoreAndroid.png"
-             alt=""
+          <img
+            src="assets/appstoreAndroid.png"
+            alt=""
             width="194"
             height="62"
           />
         </div>
       </div>
       <div class="last">
-        <hr>
+        <hr />
         <ul>
           <li><a href="">Web Accessiblity</a></li>
           <li><a href="" id="a2">Privacy Statement</a></li>
           <li><a href="" id="a3">Terms of Use</a></li>
           <li><a href="" id="a4">Contact Us</a></li>
-          <li><a href="" id="last">© 2024 Starbucks Coffee Company. All rights reserved.</a></li>
+          <li>
+            <a href="" id="last"
+              >© 2024 Starbucks Coffee Company. All rights reserved.</a
+            >
+          </li>
         </ul>
       </div>
     </footer>
