@@ -7,6 +7,10 @@
   /* font-family: SoDoSans_Semibold, Helvetica, sans-serif,thin; */
   font-weight: 600;
 }
+html{
+  scrollbar-color: #00754a #f1f1f1; /* This line controls the scrollbar color */
+  scrollbar-width: thin;
+}
 /* header start */
 header {
   max-width: 100vw;
@@ -340,6 +344,7 @@ input::placeholder {
   height: 500px;
   background-color: #edebe9;
   margin-top: 40px;
+  
 }
 .more-img {
   background-size: cover;
@@ -350,11 +355,21 @@ input::placeholder {
   border-radius: 10px;
   background-image: url(assets/coffee2.png);
   background-position: center center;
-  /* z-index: 100; */
-  /* background: linear-gradient(359.89deg, #000000bd 19.45%, #00000062 55.07%, #0000 73.63%) !important; */
+  /* box-shadow: 0 2px 4px #00000012, 0 4px 5px #0000000f, 0 1px 10px #0000001a; */
 }
-.more-img:hover {
+.img-cover{
+  position: relative;
+  width: 1096px;
+  height: 372px;
+  background: linear-gradient(359.89deg, #000000bd 19.45%, #00000062 55.07%, #0000 73.63%) !important; 
+  margin: auto;
+  border-radius: 10px;
+  top: -372px;
+}
+.img-cover:hover {
   cursor: pointer;
+  box-shadow: 0 2px 4px #00000012, 0 4px 5px #0000000f, 0 1px 10px #0000001a;
+  
 }
 /* .img-cover{
   background: linear-gradient(359.89deg, #000000bd 19.45%, #00000062 55.07%, #0000 73.63%); 
@@ -363,6 +378,7 @@ input::placeholder {
 .more-text {
   display: flex;
   justify-content: space-between;
+  
 }
 
 #more-h2 {
@@ -383,6 +399,7 @@ input::placeholder {
 }
 .img-text {
   position: relative;
+  z-index: 2;
 }
 #img-p {
   font-family: SoDoSans_Regular, Helvetica, sans-serif;
@@ -459,7 +476,9 @@ footer {
   font-size: 17px;
   /* padding: 15px 0px;
   font-weight: 400; */
+  pointer-events: none;
 }
+
 .container-footer ul {
   display: grid;
   gap: 30px;
@@ -472,6 +491,9 @@ footer {
 .aboutus {
   position: absolute;
   left: 250px;
+}
+.container-footer ul li>a:hover{
+  color: #a2a2a2;
 }
 
 .links {
@@ -537,10 +559,19 @@ footer {
 
 .last ul li {
   padding-right: 15px;
-  border-right: 1px solid #b3b3b3;
+  /* border-right: 1px solid #b3b3b3; */
 }
-*/ #last {
+#last {
   font-size: 9.6px;
+  border: none;
+}
+.last ul li>a{
+  border-right: 1px solid #b3b3b3;
+    padding-right: 13px;
+    font-weight: 700;
+}
+.last ul li>a:hover{
+  color: #a2a2a2;
 }
 #a2 {
   position: relative;
@@ -553,6 +584,10 @@ footer {
 #a4 {
   position: relative;
   right: 333px;
+  border: none;
+  
 }
+
+
 
 /* footer end */
