@@ -7,8 +7,8 @@
   /* font-family: SoDoSans_Semibold, Helvetica, sans-serif,thin; */
   font-weight: 600;
 }
-html{
-  scrollbar-color: #00754a #f1f1f1; /* This line controls the scrollbar color */
+html {
+  scrollbar-color: #00754a #f1f1f1;
   scrollbar-width: thin;
 }
 /* header start */
@@ -212,7 +212,7 @@ input::placeholder {
   font-family: SoDoSans_Regular, Helvetica, sans-serif;
   color: #1e3932;
   font-weight: 750;
-  margin-left: 30px;
+  margin-left: 35px;
 }
 .list-menu {
   margin-top: 20px;
@@ -344,7 +344,6 @@ input::placeholder {
   height: 500px;
   background-color: #edebe9;
   margin-top: 40px;
-  
 }
 .more-img {
   background-size: cover;
@@ -357,19 +356,24 @@ input::placeholder {
   background-position: center center;
   /* box-shadow: 0 2px 4px #00000012, 0 4px 5px #0000000f, 0 1px 10px #0000001a; */
 }
-.img-cover{
+.img-cover {
   position: relative;
   width: 1096px;
   height: 372px;
-  background: linear-gradient(359.89deg, #000000bd 19.45%, #00000062 55.07%, #0000 73.63%) !important; 
+  background: linear-gradient(
+    359.89deg,
+    #000000bd 19.45%,
+    #00000062 55.07%,
+    #0000 73.63%
+  ) !important;
   margin: auto;
   border-radius: 10px;
   top: -372px;
 }
 .img-cover:hover {
   cursor: pointer;
-  box-shadow: 0 2px 4px #00000012, 0 4px 5px #0000000f, 0 1px 10px #0000001a;
-  
+  --bs-bg-opacity: 0.3;
+  background-color: rgba(0, 0, 0, var(--bs-bg-opacity)) !important;
 }
 /* .img-cover{
   background: linear-gradient(359.89deg, #000000bd 19.45%, #00000062 55.07%, #0000 73.63%); 
@@ -378,7 +382,6 @@ input::placeholder {
 .more-text {
   display: flex;
   justify-content: space-between;
-  
 }
 
 #more-h2 {
@@ -492,7 +495,7 @@ footer {
   position: absolute;
   left: 250px;
 }
-.container-footer ul li>a:hover{
+.container-footer ul li > a:hover {
   color: #a2a2a2;
 }
 
@@ -565,12 +568,12 @@ footer {
   font-size: 9.6px;
   border: none;
 }
-.last ul li>a{
+.last ul li > a {
   border-right: 1px solid #b3b3b3;
-    padding-right: 13px;
-    font-weight: 700;
+  padding-right: 13px;
+  font-weight: 700;
 }
-.last ul li>a:hover{
+.last ul li > a:hover {
   color: #a2a2a2;
 }
 #a2 {
@@ -585,9 +588,6 @@ footer {
   position: relative;
   right: 333px;
   border: none;
-  
 }
-
-
 
 /* footer end */
